@@ -1,0 +1,10 @@
+setLayout(new BorderLayout());
+titleLabel=new JLabel("Selected Files");
+model=new FileModel();
+table=new JTable(model);
+jsp=new JScrollPane(table,ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+addFileButton=new JButton("Add File");
+addFileButton.addActionListener(this);
+add(titleLabel,BorderLayout.NORTH);
+add(jsp,BorderLayout.CENTER);
+add(addFileButton,BorderLayout.SOUTH);
